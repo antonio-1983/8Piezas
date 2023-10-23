@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using _8Piezas;
 using _8Piezas.Interfaces;
+using _8Piezas.Exceptions;
 using _8Piezas.Piezas;
 using System;
 
@@ -12,9 +13,10 @@ var peon = new Peon();
 var rey = new Rey();
 var reina = new Reina();
 var caballo = new Caballo();
+var piezasinsolucion = new PiezaSinSolucion();
 
 var resolver = new Resolver();
-
+//var e = new SinSolucionException();
 
 
 
@@ -25,33 +27,47 @@ var resolver = new Resolver();
         Console.WriteLine("4. TORRE");
         Console.WriteLine("5. REY");
         Console.WriteLine("6. REINA");
+        Console.WriteLine("7. PIEZA_SIN_SOLUCION");
 
-        
-        string opcion = Console.ReadLine();
+    try 
+    {
+         string opcion = Console.ReadLine();
 
         switch (opcion)
         {
-            case "1":
-                resolver.Resolver8Piezas(peon);
-        break;
-            case "2":
-                 resolver.Resolver8Piezas(alfil);
-        break;
-            case "3":
-                resolver.Resolver8Piezas(caballo);
-        break;
-            case "4":
-                resolver.Resolver8Piezas(torre);
-        break;
-            case "5":
+        case "1":
+            resolver.Resolver8Piezas(peon);
+            break;
+        case "2":
+            resolver.Resolver8Piezas(alfil);
+            break;
+        case "3":
+            resolver.Resolver8Piezas(caballo);
+            break;
+        case "4":
+            resolver.Resolver8Piezas(torre);
+            break;
+        case "5":
             resolver.Resolver8Piezas(rey);
-        break;
-            case "6":
+            break;
+        case "6":
             resolver.Resolver8Piezas(reina);
-        break;
-    default:
-                Console.WriteLine("Opción no válida");
-                break;
+            break;
+        case "7":
+            resolver.Resolver8Piezas(piezasinsolucion);
+            break;
+
+
+        default:
+            Console.WriteLine("Opción no válida");
+            break;
         }
+    }
+    catch (SinSolucionException e)
+    {
+        Console.WriteLine(e.Message);
+        Console.WriteLine(e.StackTrace);
+    }
+
 
      
