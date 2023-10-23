@@ -1,0 +1,11 @@
+C:\Users\Antonio\source\repos\8Piezas\obj\Debug\net6.0\8Piezas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Antonio\source\repos\8Piezas\obj\Debug\net6.0\8Piezas.AssemblyInfoInputs.cache
+C:\Users\Antonio\source\repos\8Piezas\obj\Debug\net6.0\8Piezas.AssemblyInfo.cs
+C:\Users\Antonio\source\repos\8Piezas\obj\Debug\net6.0\8Piezas.csproj.CoreCompileInputs.cache
+C:\Users\Antonio\source\repos\8Piezas\bin\Debug\net6.0\8Piezas.deps.json
+C:\Users\Antonio\source\repos\8Piezas\bin\Debug\net6.0\8Piezas.dll
+C:\Users\Antonio\source\repos\8Piezas\bin\Debug\net6.0\8Piezas.pdb
+C:\Users\Antonio\source\repos\8Piezas\obj\Debug\net6.0\8Piezas.dll
+C:\Users\Antonio\source\repos\8Piezas\obj\Debug\net6.0\refint\8Piezas.dll
+C:\Users\Antonio\source\repos\8Piezas\obj\Debug\net6.0\8Piezas.pdb
+C:\Users\Antonio\source\repos\8Piezas\obj\Debug\net6.0\ref\8Piezas.dll
